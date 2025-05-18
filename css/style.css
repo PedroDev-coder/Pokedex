@@ -112,10 +112,14 @@ main {
 
 .pokedex {
   padding: 1rem;
-  display: grid;
-  grid-gap: 3rem 2rem;
-  grid-template-columns: repeat(auto-fill, 250px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 2rem;
   justify-content: center;
+}
+
+.pokedex > * {
+  flex: 0 0 250px;
 }
 
 .pokemon {
